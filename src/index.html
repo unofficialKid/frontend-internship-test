@@ -15,13 +15,18 @@
       <!-- Display success message below -->
     </section>
     <div class="popup">
-      <form class="popup-form">
+      <form class="popup-form" >
         <H1 class="form-title">Login</H1>
         <i id="close" class="fas fa-times-circle" alt="Close"></i>
-        <input type = "text" placeholder= "E-mail">
-        <input type = "password" placeholder= "Password"><br>
-        <div class="agree"><input type="checkbox" class="check-input"><h3>I agree to terms & condtiotions.</h3></div>
-        <button class="btn-submit" >SUBMIT</button>
+        <input type = "email" name = "email" placeholder= "E-mail" required >
+        <input type = "password" placeholder= "Password" required minlength="2">
+        <div class="agree">
+            <input type="checkbox" id="check" required>
+            <label class="checkmark" for="check"></label>
+            <h3>I agree to terms & condtiotions.</h3>
+          </div>
+        <button class="btn-submit" id="btn-submit">SUBMIT</button>
+        
       </form>
     </div>
     <script src="js/index.min.js" charset="utf-8"></script>
